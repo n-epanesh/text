@@ -25,7 +25,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>DO&KTS</title>
+    <title>BO&KTS</title>
   </head>
   <body>
     <header>
@@ -182,23 +182,24 @@
 
     <section class="teams">
       <div class="teams-container">
-        <span>Получи бесплатную консультацию <br> по вашему проекту </span>
-        <form class="contacts_item2_container" action="telegram.php" method="POST">
-          <div class="name-container">
-            <span>Твое имя</span>
-            <input name="user_name" placeholder="Как к тебе обращаться?" ></input>
-          </div>
-          <div class="name-container">
-            <span>Ваш адрес эл.почты</span>
-            <input name="user_email" placeholder="Электронная почта" ></input>
-          </div>
-          <button class="contacts_item4" type="submit">Получить констультацию</button>
-        
+        <span
+          >Получи бесплатную консультацию <br />
+          по вашему проекту
+        </span>
       </div>
-     
-    </section>
-
-    <!-- <section class="teams" id="contacts">
+      <form class="form" method="post" action="telegram.php">
+        <div class="form__item">
+          <input class="form__input" type="text" name="name" required />
+          <label class="form__label">Ваше имя</label>
+        </div>
+        <div class="form__item">
+          <input class="form__input" type="text" name="phone" required />
+          <label class="form__label">Номер телефона</label>
+        </div>
+        <input class="form__input btn" type="submit" value="Отправить" />
+        <input type="hidden" name="act" value="order" />
+      </form>
+      <!-- <section class="teams" id="contacts">
       <div class="teams-container">
         <span
           >Получи бесплатную консультацию <br />
@@ -225,7 +226,7 @@
           </div>
         </form> -->
 
-        <!-- <form
+      <!-- <form
           class="contacts_item2_container"
           method="POST"
           action="telegram.php"
@@ -255,7 +256,6 @@
             name="act"
           />
         </form> -->
-      </div>
     </section>
 
     <ul class="wrapper">
