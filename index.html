@@ -179,7 +179,26 @@
       <img src="./img/visa.svg" alt="visa" class="payments_img" />
       <img src="./img/usdt.svg" alt="usdt" class="usdt_img" />
     </section>
-    <section class="teams" id="contacts">
+
+    <section class="teams">
+      <div class="teams-container">
+        <span>Получи бесплатную консультацию <br> по вашему проекту </span>
+        <form class="contacts_item2_container" action="telegram.php" method="POST">
+          <div class="name-container">
+            <span>Твое имя</span>
+            <input name="user_name" placeholder="Как к тебе обращаться?" ></input>
+          </div>
+          <div class="name-container">
+            <span>Ваш адрес эл.почты</span>
+            <input name="user_email" placeholder="Электронная почта" ></input>
+          </div>
+          <button class="contacts_item4" type="submit">Получить констультацию</button>
+        
+      </div>
+     
+    </section>
+
+    <!-- <section class="teams" id="contacts">
       <div class="teams-container">
         <span
           >Получи бесплатную консультацию <br />
@@ -188,15 +207,15 @@
         <form
           class="contacts_item2_container"
           action="telegram.php"
-          method="POST"
+          method="post"
         >
           <div class="name-container">
             <span class="name-container_descr">Имя</span>
-            <input name="name" placeholder="Как к тебе обращаться?" />
+            <input name="name" placeholder="Как к тебе обращаться?" required />
           </div>
           <div class="name-container">
             <span class="name-container_descr">Контакты</span>
-            <input name="phone" placeholder="Ваши контакты" />
+            <input name="phone" placeholder="Ваши контакты" required />
           </div>
           <div>
             <button class="contacts_item4 btn" type="submit">
@@ -204,7 +223,7 @@
             </button>
             <input type="hidden" name="act" value="order" />
           </div>
-        </form>
+        </form> -->
 
         <!-- <form
           class="contacts_item2_container"
