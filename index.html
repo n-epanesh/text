@@ -180,26 +180,7 @@
       <img src="./img/usdt.svg" alt="usdt" class="usdt_img" />
     </section>
 
-    <section class="teams">
-      <div class="teams-container">
-        <span
-          >Получи бесплатную консультацию <br />
-          по вашему проекту
-        </span>
-      </div>
-      <form class="form" method="post" action="telegram.php">
-        <div class="form__item">
-          <input class="form__input" type="text" name="name" required />
-          <label class="form__label">Ваше имя</label>
-        </div>
-        <div class="form__item">
-          <input class="form__input" type="text" name="phone" required />
-          <label class="form__label">Номер телефона</label>
-        </div>
-        <input class="form__input btn" type="submit" value="Отправить" />
-        <input type="hidden" name="act" value="order" />
-      </form>
-      <!-- <section class="teams" id="contacts">
+    <section class="teams" id="contacts">
       <div class="teams-container">
         <span
           >Получи бесплатную консультацию <br />
@@ -224,9 +205,9 @@
             </button>
             <input type="hidden" name="act" value="order" />
           </div>
-        </form> -->
-
-      <!-- <form
+        </form>
+        <!-- 
+        <form
           class="contacts_item2_container"
           method="POST"
           action="telegram.php"
@@ -256,6 +237,7 @@
             name="act"
           />
         </form> -->
+      </div>
     </section>
 
     <ul class="wrapper">
@@ -283,16 +265,7 @@
         </li>
       </a>
     </ul>
-    <script>
-      document.addEventListener("DOMContentLoaded", function (event) {
-        var scrollpos = localStorage.getItem("scrollpos");
-        if (scrollpos) window.scrollTo(0, scrollpos);
-      });
 
-      window.onbeforeunload = function (e) {
-        localStorage.setItem("scrollpos", window.scrollY);
-      };
-    </script>
     <script>
       const swiper = new Swiper(".swiper", {
         // If we need pagination
